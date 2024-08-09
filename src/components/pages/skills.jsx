@@ -1,5 +1,6 @@
 import React from 'react'
 import { BiLogoReact, BiLogoJavascript, BiLogoHtml5, BiLogoCss3, BiLogoTailwindCss, BiLogoSass, BiLogoBootstrap } from "react-icons/bi";
+import { FaGitAlt } from "react-icons/fa";
 import { motion } from 'framer-motion';
 import ThemeContext from '../../context/theme';
 import { useContext } from 'react';
@@ -110,6 +111,17 @@ const Skills = () => {
           { boxShadow: '0px 0px 8px #0d6efd' , transition:{duration: .5}}
         }
       > <BiLogoBootstrap />
+        </motion.div>
+        <motion.div
+        className='react_icon px-4 d-flex justify-content-center align-items-center rounded my-2'
+        style={{ fontSize: '50px', height:'64px'}}
+        variants={iconsAnimate(2)}
+        initial='initial'
+        animate='animate'
+        whileHover={
+          { boxShadow: '0px 0px 8px orange' , transition:{duration: .5}}
+        }
+      > <FaGitAlt color='orange' />
     </motion.div>
     </div >
     </div>

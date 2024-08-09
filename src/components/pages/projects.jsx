@@ -36,7 +36,7 @@ const Projects = () => {
                 <div className="pro_tab w-25 d-flex mx-auto justify-content-evenly my-3">
                     <motion.button
                         id='javascript'
-                        style={{ backgroundColor: 'transparent', border: 'none', color:language== 'javascript'? 'rgb(228, 148, 148)':'#c2c2c2'}}
+                        style={{ backgroundColor: 'transparent', border: 'none', color: language == 'javascript' ? 'rgb(228, 148, 148)' : '#c2c2c2' }}
                         whileHover={{
                             scale: 1.1,
                             transition: { duration: 0.3 },
@@ -45,7 +45,7 @@ const Projects = () => {
                     >Javascript</motion.button>
                     <motion.button
                         id='react'
-                        style={{ backgroundColor: 'transparent', border: 'none', color:language== 'react'? 'rgb(228, 148, 148)':'#c2c2c2'}}
+                        style={{ backgroundColor: 'transparent', border: 'none', color: language == 'react' ? 'rgb(228, 148, 148)' : '#c2c2c2' }}
                         whileHover={{
                             scale: 1.1,
                             transition: { duration: 0.3 },
@@ -138,6 +138,33 @@ const Projects = () => {
                                     </div>
                                     <p style={theme == 'light' ? { color: '#d5cdcd' } : { color: '#646262' }}>
                                         Do you love the millionare game ? let's play
+                                    </p>
+                                    <div className="project_tools d-flex">
+                                        <BiLogoReact size={30} className='text-primary' /> <BiLogoCss3 size={30} color='blue' /> <BiLogoBootstrap size={30} className='text-primary' />
+                                    </div>
+                                </div>
+                            </Carousel.Item>
+                            <Carousel.Item id='millionare-game' >
+                                <div
+                                    className={`mx-auto ${screenWidth <= 800 ? 'w-100' : 'w-75'} rounded p-2`}
+                                    style={theme == 'light' ? { backgroundColor: '#140225' } : { backgroundColor: '#dee2e6' }}
+                                >
+                                    <div className="project_perview d-flex justify-content-between align-items-baseline  my-2">
+                                        <h4 style={textStyle}>Workout timer</h4>
+                                        <div className="project_links">
+                                            <Button
+                                                href='https://github.com/Amany091/workout-timer'
+                                                style={{ ...textStyle, backgroundColor: 'transparent', border: 'none' }}
+                                            ><BiLogoGithub size={20} /> code</Button>
+                                            <Button
+                                                href='https://workout-timer-alpha.vercel.app/'
+                                                style={{ ...textStyle, backgroundColor: 'transparent', border: 'none' }}
+
+                                            ><FaEye size={20} /> live</Button>
+                                        </div>
+                                    </div>
+                                    <p style={theme == 'light' ? { color: '#d5cdcd' } : { color: '#646262' }}>
+                                    A simple application built with React that displays your to-do list and includes a countdown timer for each task. It utilizes hooks like useState, useRef, and useEffect.
                                     </p>
                                     <div className="project_tools d-flex">
                                         <BiLogoReact size={30} className='text-primary' /> <BiLogoCss3 size={30} color='blue' /> <BiLogoBootstrap size={30} className='text-primary' />
