@@ -13,6 +13,7 @@ import Contact from "./components/pages/contact";
 import ThemeContext from "./context/theme";
 import { useState } from "react";
 import Client from "./context/client";
+import { ToastContainer } from "react-toastify";
 function App() {
   const [theme, setTheme] = useState("light");
   const [clientMail,setClientMail] = useState({})
@@ -28,6 +29,7 @@ function App() {
     <div className={`App`} style={bgStyle}>
       <ThemeContext.Provider value={{ theme, setTheme }}>
         <Client.Provider value={{ clientMail, setClientMail }}>
+          <ToastContainer />
         <TopIcon/>
         <Navbaar />
         <Cover />

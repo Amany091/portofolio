@@ -6,10 +6,13 @@ import ThemeContext from '../../context/theme'
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import Client from '../../context/client';
+import { toast } from 'react-toastify';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const formRef = useRef()
     const { theme } = useContext(ThemeContext)
-    const { setClientMail } = useContext(Client)
+    const { setClientMail, clientMail } = useContext(Client)
     const { register, formState, watch, reset, handleSubmit, formState: { errors, isSubmitSuccessful } } = useForm({
         mode: 'onChange',
         defaultValues: {
@@ -18,6 +21,7 @@ const Contact = () => {
             message: ''
         }
     })
+
 
     const themeButton = {
         backgroundImage: theme === 'light' ? 'linear-gradient(90deg, rgb(84 14 131) 0%, rgb(98, 53, 98) 50%, rgb(5, 68, 145) 100%)' : 'linear-gradient(85deg, rgb(225 215 232) 0%, rgb(228 148 148) 50%, rgb(210 106 126) 100%)'
@@ -29,8 +33,21 @@ const Contact = () => {
 
     const handleSubmiting = (client) => {
         setClientMail(client)
-       
+        emailjs
+            .send('service_9ww10hq', 'template_g5l354j', client, 'PXP5u0Z_X6qJzUVeK')
+            .then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    toast.success(response.text)
+                },
+                (error) => {
+                    console.log('FAILED...', error);
+                    toast.error(error.text)
+                },
+            );
     };
+
+
 
     const textStyle = {
         color: theme === 'light' ? '#f2f2f2' : '#000'
@@ -84,7 +101,7 @@ const Contact = () => {
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6 rounded">
                     <h5 style={textStyle} >Feel free to contact me any time. i will respond as soon as possible.</h5>
-                    <Form onSubmit={handleSubmit(handleSubmiting)} >
+                    <Form onSubmit={handleSubmit(handleSubmiting)} ref={formRef} >
                         <Form.Group controlId="formBasicName">
                             <Form.Label style={textStyle}>Your Name</Form.Label>
                             <Form.Control
@@ -135,12 +152,11 @@ const Contact = () => {
                             />
                             <Form.Control.Feedback type='invalid' >{errors.message?.message}</Form.Control.Feedback>
                         </Form.Group>
-                        <Button className='w-50 my-4' type='button' style={{ ...themeButton, border: 'none' }} onClick={handleSubmit((data) => handleSubmiting(data))} >Send</Button>
+                        <Button className='w-50 my-4' type='submit' style={{ ...themeButton, border: 'none' }} onClick={handleSubmit((data,) => handleSubmiting(data))} >Send</Button>
                     </Form>
                 </div>
             </div>
         </div>
     )
 }
-
 export default Contact
