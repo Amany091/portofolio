@@ -109,14 +109,14 @@ const Cover = () => {
               <Button
                 style={{...themeButton, border:'none'}}
                 className='w-25 my-4 resume w-50'
-                href={require('../../assets/resume.pdf')}
+                href={require('../../assets/docs/resume.pdf')}
                 download="Amany_Mohamed_Resume.pdf"
               > Download Resume </Button>
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div className='person_bg rounded-pill border-4 mx-auto w-75 d-flex justify-content-center align-items-center' >
-              <img src={require('../../assets/portfolio.jpg')} width={300} style={borderStyle} className='rounded-pill' alt="background" />
+              <img src={require('../../assets/images/portfolio.jpg')} width={300} style={borderStyle} className='rounded-pill' alt="background" />
             </div>
           </div>
         </div>
