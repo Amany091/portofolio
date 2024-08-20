@@ -7,16 +7,7 @@ import { useContext } from 'react'
 const Experience = () => {
     const { theme } = useContext(ThemeContext)
     const [screenWidth, setScreenWidth] = useState(null)
-    const rotat = {
-        initial: { x: 0, y: 0 },
-        animate: {
-            x: [1, -1, 1],
-            y: [-1, 1, -1],
-            rotate: [0, 360],
-            transition: { duration: 5, repeat: Infinity }
-        },
-    }
-
+    
     const textStyle = {
         color: theme === 'light' ? '#f2f2f2' : '#000'
     }
@@ -47,7 +38,7 @@ const Experience = () => {
                 }
 
             >
-                <div className={` p-2`} style={theme == 'light' ? { backgroundColor: '#140225' } : { backgroundColor: '#dee2e6' }}>
+                <div className={` p-2`} style={theme == 'light' ? { backgroundColor: '#604777' } : { backgroundColor: '#dee2e6' }}>
                     <div className="d-flex justify-content-between px-2">
                         <h4 style={textStyle}>React Developer</h4>
                         <p className="edu_delay" style={theme == 'light' ? { color: '#d5cdcd' } : { color: '#646262' }} >25Apr-present</p>

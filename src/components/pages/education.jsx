@@ -36,7 +36,7 @@ const Education = () => {
                         { scale: 1.01, transition: { duration: 0.2 }, backgroundImage: 'linear-gradient(90deg, #25213b 20%, #8b5cf6 52% , #25213b 81%) !important' , boxShadow: '0px 0px 8px rgb(228, 148, 148)' }
                 }
             >
-                    <div className={` p-2`} style={theme == 'light' ? {backgroundColor: '#140225'} : {backgroundColor: '#dee2e6'}}>
+                    <div className={` p-2`} style={theme == 'light' ? {backgroundColor: '#604777'} : {backgroundColor: '#dee2e6'}}>
                         <h4 style={textStyle}>Bachelor of Computer And Information </h4>
                         <p className="edu_delay" style={theme == 'light' ? { color: '#d5cdcd' } : { color: '#646262' }} >2019-2023</p>
                         <p className="edu_experience" style={theme == 'light' ? { color: '#d5cdcd' } : { color: '#646262' }}>

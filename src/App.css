@@ -11,30 +11,14 @@ body {
     background-color: transparent;
 }
 
-.tab-active-light {
-    color: #883355 !important;
-    font-weight: 400;
-}
-
-.tab-active-dark {
-    color: #fff !important;
-}
-
-.carousel-indicators {
-    margin-bottom: -.5rem !important;
-    bottom: -15px !important;
-}
-
-.carousel-control-next {
-    right: -60px !important;
-}
-
-.carousel-control-prev {
-left: -76px !important;
-}
-
 .user_services .row , #contact .row{
     width: 85vw;
     margin: auto;
     justify-content: center;
+}
+
+@media screen and (min-width : 1000px)  {
+    .user_projects #front-end_projects  > div{
+        width: 25%;
+    }
 }

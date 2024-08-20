@@ -58,7 +58,7 @@ const Cover = () => {
                 initial="hidden"
                 animate="visible"
                 style={textStyle}
-              > Hi , I am Amany Mohamed</motion.h1>
+              >  I am Amany Mohamed</motion.h1>
               <motion.p
                 className='job_field'
                 variants={textAnimate(1.2, .6)}

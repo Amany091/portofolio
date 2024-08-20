@@ -10,7 +10,7 @@ const Services = () => {
     const [screenWidth, setScreenWidth] = useState(null)
 
     const bgTheme = {
-        backgroundImage: theme === 'light' ? 'linear-gradient(90deg, rgb(84 14 131) 0%, rgb(98, 53, 98) 50%, rgb(5, 68, 145) 100%)' : 'linear-gradient(85deg, rgb(228 154 154) 0%, rgb(228, 148, 148) 50%, rgb(210, 106, 126) 100%)'
+        backgroundImage: theme === 'light' ? 'linear-gradient(90deg, rgb(106 94 114) 0%, rgb(118 69 118) 50%)' : 'linear-gradient(85deg, rgb(228 154 154) 0%, rgb(228, 148, 148) 50%, rgb(210, 106, 126) 100%)'
     }
 
 
