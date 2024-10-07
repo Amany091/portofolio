@@ -109,7 +109,7 @@ const Cover = () => {
               <Button
                 style={{...themeButton, border:'none'}}
                 className='w-25 my-4 resume w-50'
-                href={require('../../assets/docs/resume.pdf')}
+                href={require('../../assets/docs/Amany_Mohamed_Resume.pdf')}
                 download="Amany_Mohamed_Resume.pdf"
               > Download Resume </Button>
             </div>
