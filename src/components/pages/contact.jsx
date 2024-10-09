@@ -67,9 +67,9 @@ const Contact = () => {
                         </motion.div>
                         <Button
                             style={{ ...textStyle, backgroundColor: 'transparent', border: 'none' }}
-                            href='mailto:2manym7md90@gmail.com' target='_blank'
+                            href='mailto:amanyzeyada10@gmail.com' target='_blank'
                             rel='noopener noreferrer'
-                        >2manym7md90@gmail.com</Button>
+                        >amanyzeyada10@gmail.com</Button>
                     </div>
                     <div className="linkedin p-1 mb-2 d-flex ">
                         <motion.div
