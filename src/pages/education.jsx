@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ThemeContext from '../../context/theme'
+import ThemeContext from '../context/theme'
 import { useContext } from 'react'
 import { motion } from 'framer-motion'
 

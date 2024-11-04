@@ -2,7 +2,7 @@ import React from 'react'
 import { BiLogoReact, BiLogoJavascript, BiLogoHtml5, BiLogoCss3, BiLogoTailwindCss, BiLogoSass, BiLogoBootstrap } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa";
 import { motion } from 'framer-motion';
-import ThemeContext from '../../context/theme';
+import ThemeContext from '../context/theme';
 import { useContext } from 'react';
 
 

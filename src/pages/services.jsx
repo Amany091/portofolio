@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import { motion } from 'framer-motion'
-import ThemeContext from '../../context/theme'
+import ThemeContext from '../context/theme'
 import { useContext } from 'react'
 import { BiEdit, BiImage } from 'react-icons/bi'
 import { FaPercent } from 'react-icons/fa'

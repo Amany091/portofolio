@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Button, Form } from 'react-bootstrap'
 import { BiLogoGmail, BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 import { useContext } from 'react';
-import ThemeContext from '../../context/theme'
+import ThemeContext from '../context/theme'
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
-import Client from '../../context/client';
+import Client from '../context/client';
 import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 
