@@ -36,12 +36,7 @@ const Projects = () => {
                                 <Button
                                     href='https://github.com/Amany091/todo-list'
                                     style={{ ...textStyle, backgroundColor: 'transparent', border: 'none' }}
-                                ><BiLogoGithub size={20} /> code</Button>
-                                <Button
-                                    href='https://todo-list-xi-teal-18.vercel.app/'
-                                    style={{ ...textStyle, backgroundColor: 'transparent', border: 'none' }}
-
-                                ><FaEye size={20} /> live</Button>
+                                ><BiLogoGithub size={20} /> </Button>
                             </div>
                         </div>
                         <p style={theme == 'light' ? { color: '#d5cdcd' } : { color: '#646262' }}>
@@ -56,13 +51,13 @@ const Projects = () => {
                         className='rounded  p-2 col-lg-3 col-md-6 col-sm-12'
                         style={theme == 'light' ? { backgroundColor: '#604777' } : { backgroundColor: '#dee2e6' }}
                     >
-                        <div className="project_perview d-flex justify-content-between  align-items-baseline my-2">
+                        <div className="project_perview d-flex justify-content-between  align-items-baseline ">
                             <h4 style={textStyle}>E-Commerce website</h4>
                             <div className="project_links">
                                 <Button
                                     href='https://github.com/Amany091/e-commerce'
                                     style={{ ...textStyle, backgroundColor: 'transparent', border: 'none' }}
-                                ><BiLogoGithub size={20} /> code</Button>
+                                ><BiLogoGithub size={20} /> </Button>
                                
                             </div>
                         </div>
@@ -78,13 +73,13 @@ const Projects = () => {
                         className='rounded p-2  col-lg-3 col-md-6 col-sm-12'
                         style={theme == 'light' ? { backgroundColor: '#604777' } : { backgroundColor: '#dee2e6' }}
                     >
-                        <div className="project_perview d-flex justify-content-between align-items-baseline  my-2">
+                        <div className="project_perview d-flex justify-content-between align-items-baseline">
                             <h4 style={textStyle}>Workout timer</h4>
                             <div className="project_links">
                                 <Button
                                     href='https://github.com/Amany091/workout-timer'
                                     style={{ ...textStyle, backgroundColor: 'transparent', border: 'none' }}
-                                ><BiLogoGithub size={20} /> code</Button>
+                                ><BiLogoGithub size={20} /> </Button>
                                 
                             </div>
                         </div>
@@ -100,13 +95,13 @@ const Projects = () => {
                         className='rounded p-2  col-lg-3 col-md-6 col-sm-12'
                         style={theme == 'light' ? { backgroundColor: '#604777' } : { backgroundColor: '#dee2e6' }}
                     >
-                        <div className="project_perview d-flex justify-content-between align-items-baseline  my-2">
+                        <div className="project_perview d-flex justify-content-between align-items-baseline">
                             <h4 style={textStyle}>E-Commerce website</h4>
                             <div className="project_links">
                                 <Button
                                     href='https://github.com/Amany091/final-ecommerce.git'
                                     style={{ ...textStyle, backgroundColor: 'transparent', border: 'none' }}
-                                ><BiLogoGithub size={20} /> code</Button>
+                                ><BiLogoGithub size={20} /> </Button>
                                 
                             </div>
                         </div>
